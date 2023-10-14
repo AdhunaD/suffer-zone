@@ -11,13 +11,17 @@ print(mylist)
 
 new_list = [2, 14, 8, 1, 9, 7]
 
-counter = 0
-while counter < len(new_list) - 1:
-    # this  is where I write the logic of the loop
-    if new_list[counter] > new_list[counter+1]:
-        # swap the numbers
-        new_list[counter],new_list[counter+1] = new_list[counter+1],new_list[counter]
-    print(new_list)
-    counter = counter + 1
+counter1 = 0
+while counter1 < len(new_list):
+    counter = 0
+    while counter < len(new_list) - 1:
+        # this  is where I write the logic of the loop
+        if new_list[counter] > new_list[counter+1]:
+            # swap the numbers
+            new_list[counter],new_list[counter+1] = new_list[counter+1],new_list[counter]
+        print(new_list)
+        counter = counter + 1
 
-    # print(new_list)
+        # print(new_list)
+    counter1 = counter1 + 1
+print(new_list)
